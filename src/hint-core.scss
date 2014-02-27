@@ -32,9 +32,9 @@
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
 
-		// -webkit-transition: 0.3s ease;
-		// -moz-transition: 0.3s ease;
-		// transition: 0.3s ease;
+		-webkit-transition: opacity 0.2s ease;
+		-moz-transition: opacity 0.2s ease;
+		transition: opacity 0.2s ease;
 	}
 
 	&:hover:before, &:hover:after,
