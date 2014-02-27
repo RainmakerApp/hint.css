@@ -42,10 +42,7 @@
     visibility: hidden;
     opacity: 0;
     z-index: 1000000;
-    pointer-events: none;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    transition: 0.3s ease; }
+    pointer-events: none; }
   .hint:hover:before, .hint:hover:after, .hint:focus:before, .hint:focus:after, [data-hint]:hover:before, [data-hint]:hover:after, [data-hint]:focus:before, [data-hint]:focus:after {
     visibility: visible;
     opacity: 1; }
@@ -59,12 +56,10 @@
     content: attr(data-hint);
     background: #383838;
     color: white;
-    text-shadow: 0 -1px 0px #383838;
     padding: 8px 10px;
     font-size: 12px;
     line-height: 12px;
-    white-space: nowrap;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
+    white-space: nowrap; }
 
 /**
  * source: hint-position.scss
@@ -276,3 +271,7 @@
  * 	1) hint--bounce
  *
  */
+.hint--bounce:before, .hint--bounce:after {
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24); }
