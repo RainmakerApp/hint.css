@@ -22,10 +22,10 @@ $arrowBorderWidth: 6px !default;
 $arrowOffsetX: 3 * $arrowBorderWidth !default;
 
 // text-shadow darken percentage
-$textShadowDarkenAmount: 25% !default;
+$textShadowDarkenAmount: 0% !default;
 
 // transition distance
-$transitionDistance: 8px !default;
+$transitionDistance: 0px !default;
 
 // z-index for tooltips
 $zIndex: 1000000 !default;
